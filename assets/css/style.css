@@ -253,6 +253,7 @@ body {
 .header-top .logo h1 {
   color: white;
   font-weight: normal;
+  font-size: 20px;
 }
 
 .header-top .logo img {
