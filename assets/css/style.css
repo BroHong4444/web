@@ -530,6 +530,11 @@ body {
   height: 430px;
 }
 
+.popular-card:hover {
+  transform: scale(1.05); /* Increase the size by 5% when hovered */
+  transition: transform 0.1s ease-in-out;
+}
+
 .popular-card .card-img {
   height: 100%;
 }
@@ -606,6 +611,7 @@ body {
   overflow: hidden;
   border-radius: 15px;
 }
+
 
 .package-card .card-banner {
   height: 250px;
@@ -739,10 +745,15 @@ body {
   border-radius: var(--radius-15);
   overflow: hidden;
 }
+.gallery-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.s ease-in-out; 
+}
 
 .gallery-item:nth-child(3) {
   grid-area: 1 / 2 / 3 / 3;
 }
+
 
 .gallery-image img {
   width: 100%;

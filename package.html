@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romdul Tour - Travel agancy</title>
-    <!--fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/icon/favicon.svg" type="image/svg+xml">
     <!--  custom css link -->
@@ -20,6 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 <!-- id="top" oncontextmenu="return false" -->
+
 <body>
     <header class="header" data-header>
         <div class="overlay" data-overlay></div>
@@ -27,7 +27,7 @@
             <div class="container">
                 <a href="tel:+01123456790" class="helpline-box">
                     <div class="icon-box">
-                        <i class="fas fa-phone"></i>
+                        <ion-icon name="call-outline"></ion-icon>
                     </div>
                     <div class="wrapper">
                         <p class="helpline-title">Contact Us :</p>
@@ -42,10 +42,6 @@
                     <button class="search-btn" aria-label="Search">
                         <ion-icon name="search"></ion-icon>
                     </button>
-                    <button class="btn btn-primary btn-register" id="btn-register">
-                        <i class="fa-solid fa-user"></i>
-                        REGISTER
-                    </button>
                     <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
                         <ion-icon name="menu-outline"></ion-icon>
                     </button>
@@ -56,18 +52,18 @@
             <div class="container">
                 <ul class="social-list">
                     <li>
-                        <a href="#" class="social-link fb-bg-color">
-                            <i class="fab fa-facebook"></i>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link telegram-bg-color">
-                            <i class="fab fa-telegram"></i>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="social-link youtube-bg-color">
-                            <i class="fab fa-youtube"></i>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
                         </a>
                     </li>
                 </ul>
@@ -82,21 +78,22 @@
                     </div>
                     <ul class="navbar-list">
                         <li>
-                            <a href="#home" class="navbar-link" data-nav-link>home</a>
+                            <a href="index.html" class="navbar-link" data-nav-link>home</a>
                         </li>
                         <li>
                             <a href="#" class="navbar-link" data-nav-link>about
                                 us</a>
                         </li>
                         <li>
-                            <a href="#" class="navbar-link" data-nav-link>destination</a>
+                            <a href="#destination" class="navbar-link" data-nav-link>destination</a>
                         </li>
                         <li>
-                            <a href="package.html" class="navbar-link" data-nav-link>packages</a>
+                            <a href="#package.html" class="navbar-link" data-nav-link>packages</a>
                         </li>
                         <li>
-                            <a href="#" class="navbar-link" data-nav-link>gallery</a>
+                            <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
                         </li>
+
                         <li>
                             <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
                         </li>
@@ -106,13 +103,15 @@
             </div>
         </div>
     </header>
+
     <main>
         <article>
             <!-- HERO -->
-            <section class="hero" id="home">
+            <!-- <section class="hero" id="home">
                 <div class="container">
 
                     <h2 class="h1 hero-title">ដំណើរកម្សាន្តជុំវិញប្រទេសកម្ពុជា</h2>
+
                     <p class="hero-text">
                         Ac mi duis mollis. Sapiente? Scelerisque quae,
                         penatibus? Suscipit class corporis nostra rem
@@ -121,63 +120,150 @@
                         Fames, vivamus minim nemo enim, gravida lobortis
                         quasi, eum.
                     </p>
+
                     <div class="btn-group">
                         <button class="btn btn-primary">Learn more</button>
+
                         <button class="btn btn-secondary">Book now</button>
                     </div>
 
                 </div>
-            </section>
+            </section> -->
 
             <!-- TOUR SEARCH -->
+
             <section class="tour-search">
-                <div class="container">
+                <!-- <div class="container">
+
                     <form action class="tour-search-form">
                         <div class="input-wrapper">
                             <label for="destination" class="input-label">Search
                                 Destination*</label>
+
                             <input type="text" name="destination" id="destination" required
                                 placeholder="Enter Destination" class="input-field">
                         </div>
+
                         <div class="input-wrapper">
                             <label for="people" class="input-label">Pax
                                 Number*</label>
+
                             <input type="number" name="people" id="people" required placeholder="No.of People"
                                 class="input-field">
                         </div>
+
                         <div class="input-wrapper">
                             <label for="checkin" class="input-label">Checkin
                                 Date**</label>
+
                             <input type="date" name="checkin" id="checkin" required class="input-field">
                         </div>
 
                         <div class="input-wrapper">
                             <label for="checkout" class="input-label">Checkout
                                 Date*</label>
+
                             <input type="date" name="checkout" id="checkout" required class="input-field">
                         </div>
+
                         <button type="submit" class="btn btn-secondary">Inquire
                             now</button>
+
                     </form>
-                </div>
+
+                </div> -->
+
             </section>
 
             <!-- POPULAR -->
 
             <section class="popular" id="destination">
                 <div class="container">
-                    <p class="section-subtitle">Uncover place</p>
+
+                    <!-- <p class="section-subtitle">Uncover place</p> -->
+
                     <h2 class="h2 section-title">តំបន់ទេសរចរណ៍ដែលពេញនិយម</h2>
-                    <p class="section-text">
+
+                    <!-- <p class="section-text">
                         Fusce hic augue velit wisi quibusdam pariatur, iusto
                         primis, nec nemo, rutrum. Vestibulum cumque
                         laudantium.
                         Sit ornare
                         mollitia tenetur, aptent.
-                    </p>
-                    <ul class="popular-list" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                    </p> -->
+
+                    <ul class="popular-list">
+
+                        
+                        
                         <li>
                             <div class="popular-card">
+
+                                <figure class="card-img">
+                                    <img src="./assets/images/package/angkorwat.jpg" alt="Kyoto temple, japan" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">ខេត្តសៀមរាប</a>
+                                    </p>
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">ប្រាសាទអង្គរវត្ត</a>
+                                    </h3>
+
+                                    <!-- <p class="card-text">
+                                        Fusce hic augue velit wisi ips
+                                        quibusdam pariatur, iusto.
+                                    </p> -->
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="./assets/images/package/RoyalPalace.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">ភ្នំពេញ</a>
+                                    </p>
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">ព្រះបរមរាជវាំង</a>
+                                    </h3>
+
+                                    <!-- <p class="card-text">
+                                        Fusce hic augue velit wisi ips
+                                        quibusdam pariatur, iusto.
+                                    </p> -->
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+
                                 <figure class="card-img">
                                     <img src="./assets/images/KPs (2).jpg" alt="San miguel, italy" loading="lazy">
                                 </figure>
@@ -195,19 +281,24 @@
                                     <h3 class="h3 card-title">
                                         <a href="#">ឆ្នេរកំពង់សោម</a>
                                     </h3>
-                                    <p class="card-text">
+                                    <!-- <p class="card-text">
                                         Fusce hic augue velit wisi ips
                                         quibusdam pariatur, iusto.
-                                    </p>
+                                    </p> -->
+
                                 </div>
+
                             </div>
                         </li>
                         <li>
                             <div class="popular-card">
+
                                 <figure class="card-img">
-                                    <img src="./assets/images/1.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                                    <img src="./assets/images/package/KoLen.jpg" alt="Kyoto temple, japan" loading="lazy">
                                 </figure>
+
                                 <div class="card-content">
+
                                     <div class="card-rating">
                                         <ion-icon name="star"></ion-icon>
                                         <ion-icon name="star"></ion-icon>
@@ -215,78 +306,131 @@
                                         <ion-icon name="star"></ion-icon>
                                         <ion-icon name="star"></ion-icon>
                                     </div>
-                                    <p class="card-subtitle">
-                                        <a href="#">ខេត្តកំពង់ស្ពឺ</a>
-                                    </p>
-                                    <h3 class="h3 card-title">
-                                        <a href="#">ភ្នំខ្នងផ្សារ</a>
-                                    </h3>
-                                    <p class="card-text">
-                                        Fusce hic augue velit wisi ips
-                                        quibusdam pariatur, iusto.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="popular-card">
-                                <figure class="card-img">
-                                    <img src="./assets/images/6.jpg" alt="Kyoto temple, japan" loading="lazy">
-                                </figure>
-                                <div class="card-content">
-                                    <div class="card-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
+
                                     <p class="card-subtitle">
                                         <a href="#">ខេត្តសៀមរាប</a>
                                     </p>
+
                                     <h3 class="h3 card-title">
-                                        <a href="#">ប្រាសាទអង្គរវត្ត</a>
+                                        <a href="#">ភ្នំគូលែន</a>
                                     </h3>
-                                    <p class="card-text">
-                                        Fusce hic augue velit wisi ips
-                                        quibusdam pariatur, iusto.
-                                    </p>
+
+                                    <!-- <p class="card-text">ភ្នំគូលែន មានទីតាំងស្ថិតនៅចំងាយ ៦០គីឡូម៉ែត្រពីក្រុងសៀមរាប និងប្រហែល២៥គីឡូម៉ែត្រពីប្រាសាទបន្ទាយស្រី។
+                                    </p> -->
+
                                 </div>
+
                             </div>
                         </li>
+                        <li>
+                            <div class="popular-card">
+
+                                <figure class="card-img">
+                                    <img src="./assets/images/package/pubstreet.jpg" alt="Kyoto temple, japan" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">ខេត្តសៀមរាប</a>
+                                    </p>
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">ផាប់ស្រ្ទីត</a>
+                                    </h3>
+
+                                    <!-- <p class="card-text">
+                                        Fusce hic augue velit wisi ips
+                                        quibusdam pariatur, iusto.
+                                    </p> -->
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="popular-card">
+
+                                <figure class="card-img">
+                                    <img src="./assets/images/package/sopheakmit.jpg" alt="Kyoto temple, japan" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle">
+                                        <a href="#">ខេត្តស្ទឹងត្រែង</a>
+                                    </p>
+
+                                    <h3 class="h3 card-title">
+                                        <a href="#">ទឹកជ្រោះសុភមិត្ត</a>
+                                    </h3>
+
+                                    <!-- <p class="card-text">
+                                        Fusce hic augue velit wisi ips
+                                        quibusdam pariatur, iusto.
+                                    </p> -->
+
+                                </div>
+
+                            </div>
+                        </li>
+
                     </ul>
+
                     <button class="btn btn-primary">More destintion</button>
+
                 </div>
             </section>
+
+            <!-- PACKAGE -->
+
             <section class="package" id="package">
                 <div class="container">
-                    <p class="section-subtitle">Popular Packeges</p>
-                    <h2 class="h2 section-title">Checkout Our Packeges</h2>
+
+                    <!-- <p class="section-subtitle">Popular Packeges</p> -->
+
+                    <h2 class="h2 section-title">ធ្វើដំណើរជាមួយកញ្ចប់សេវ៉ាកម្មពិសេស</h2>
+
                     <p class="section-text">
-                        Fusce hic augue velit wisi quibusdam pariatur, iusto
-                        primis, nec nemo, rutrum. Vestibulum cumque
-                        laudantium.
-                        Sit ornare
-                        mollitia tenetur, aptent.
+                        មានអាហារបីពេល ផ្តល់ជូននៅកន្លែងស្នាក់នៅដោយឥតគិតថ្លៃ និង មានឳកាសឈ្នះរង្វាន់ថែមទៀតផង
                     </p>
+
                     <ul class="package-list">
-                        <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+                        <li>
                             <div class="package-card">
+
                                 <figure class="card-banner">
-                                    <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach"
+                                    <img src="./assets/images/package/knong psa.jpg" alt="Experience The Great Holiday On Beach"
                                         loading="lazy">
                                 </figure>
+
                                 <div class="card-content">
-                                    <h3 class="h3 card-title">Experience The
-                                        Great Holiday On Beach</h3>
+
+                                    <h3 class="h3 card-title">ភ្នំខ្នងផ្សារ</h3>
+
                                     <p class="card-text">
-                                        Laoreet, voluptatum nihil dolor esse
-                                        quaerat mattis explicabo maiores,
-                                        est
-                                        aliquet porttitor! Eaque,
-                                        cras, aspernatur.
+                                        ​ភ្នំខ្នងផ្សា ជាតំបន់ព្រៃភ្នំដ៏ស្រស់ត្រកាលនៅកំពង់ស្ពឺ ល្អបំផុតសម្រាប់អ្នកចូលចិត្ត ដំណើរផ្សងព្រេង
                                     </p>
+
                                     <ul class="card-meta-list">
+
                                         <li class="card-meta-item">
                                             <div class="meta-box">
                                                 <ion-icon name="time"></ion-icon>
@@ -302,6 +446,7 @@
                                                 <p class="text">pax: 10</p>
                                             </div>
                                         </li>
+
                                         <li class="card-meta-item">
                                             <div class="meta-box">
                                                 <ion-icon name="location"></ion-icon>
@@ -309,11 +454,17 @@
                                                 <p class="text">Malaysia</p>
                                             </div>
                                         </li>
+
                                     </ul>
+
                                 </div>
+
                                 <div class="card-price">
+
                                     <div class="wrapper">
+
                                         <p class="reviews">(25 reviews)</p>
+
                                         <div class="card-rating">
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
@@ -321,31 +472,35 @@
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
                                         </div>
+
                                     </div>
+
                                     <p class="price">
                                         $750
                                         <span>/ per person</span>
                                     </p>
+
                                     <button class="btn btn-secondary">Book
                                         Now</button>
+
                                 </div>
+
                             </div>
                         </li>
-                        <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+                        <li>
                             <div class="package-card">
+
                                 <figure class="card-banner">
-                                    <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River"
+                                    <img src="./assets/images/package/bokor.jpg" alt="Santorini Island's Weekend Vacation"
                                         loading="lazy">
                                 </figure>
+
                                 <div class="card-content">
-                                    <h3 class="h3 card-title">Summer Holiday
-                                        To The Oxolotan River</h3>
+
+                                    <h3 class="h3 card-title">ភ្នំបូកគោ</h3>
+
                                     <p class="card-text">
-                                        Laoreet, voluptatum nihil dolor esse
-                                        quaerat mattis explicabo maiores,
-                                        est
-                                        aliquet porttitor! Eaque,
-                                        cras, aspernatur.
+                                        រមណីដ្ឋានភ្នំបូកគោនេះស្ថិត ​នៅ​ចម្ងាយ​៤២​គីឡូម៉ែត្រ​ពី​ទី​រួម​ខេត្ត​កំពត
                                     </p>
 
                                     <ul class="card-meta-list">
@@ -357,65 +512,7 @@
                                                 <p class="text">7D/6N</p>
                                             </div>
                                         </li>
-                                        <li class="card-meta-item">
-                                            <div class="meta-box">
-                                                <ion-icon name="people"></ion-icon>
-                                                <p class="text">pax: 10</p>
-                                            </div>
-                                        </li>
-                                        <li class="card-meta-item">
-                                            <div class="meta-box">
-                                                <ion-icon name="location"></ion-icon>
 
-                                                <p class="text">Malaysia</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-price">
-                                    <div class="wrapper">
-                                        <p class="reviews">(20 reviews)</p>
-                                        <div class="card-rating">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <p class="price">
-                                        $520
-                                        <span>/ per person</span>
-                                    </p>
-                                    <button class="btn btn-secondary">Book
-                                        Now</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
-                            <div class="package-card">
-                                <figure class="card-banner">
-                                    <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation"
-                                        loading="lazy">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h3 card-title">Santorini
-                                        Island's Weekend Vacation</h3>
-                                    <p class="card-text">
-                                        Laoreet, voluptatum nihil dolor esse
-                                        quaerat mattis explicabo maiores,
-                                        est
-                                        aliquet porttitor! Eaque,
-                                        cras, aspernatur.
-                                    </p>
-                                    <ul class="card-meta-list">
-                                        <li class="card-meta-item">
-                                            <div class="meta-box">
-                                                <ion-icon name="time"></ion-icon>
-
-                                                <p class="text">7D/6N</p>
-                                            </div>
-                                        </li>
                                         <li class="card-meta-item">
                                             <div class="meta-box">
                                                 <ion-icon name="people"></ion-icon>
@@ -423,6 +520,7 @@
                                                 <p class="text">pax: 10</p>
                                             </div>
                                         </li>
+
                                         <li class="card-meta-item">
                                             <div class="meta-box">
                                                 <ion-icon name="location"></ion-icon>
@@ -430,11 +528,17 @@
                                                 <p class="text">Malaysia</p>
                                             </div>
                                         </li>
+
                                     </ul>
+
                                 </div>
+
                                 <div class="card-price">
+
                                     <div class="wrapper">
+
                                         <p class="reviews">(40 reviews)</p>
+
                                         <div class="card-rating">
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
@@ -442,86 +546,417 @@
                                             <ion-icon name="star"></ion-icon>
                                             <ion-icon name="star"></ion-icon>
                                         </div>
+
                                     </div>
+
                                     <p class="price">
                                         $660
                                         <span>/ per person</span>
                                     </p>
+
                                     <button class="btn btn-secondary">Book
                                         Now</button>
+
                                 </div>
+
                             </div>
                         </li>
+                        <li>
+                            <div class="package-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/package/Kohtonsay.jpg" alt="Santorini Island's Weekend Vacation"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">កោះទន្សាយ</h3>
+
+                                    <p class="card-text">
+                                        កោះទន្សាយ ​ជា រមណីដ្ឋានធម្មជាតិ​ដ៏ល្អប្រណិត​របស់ទីក្រុងកែប ដែល​មាន​លក្ខណៈ​អំណោយ​ពី​ធម្មជាតិ  
+                                    </p>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="time"></ion-icon>
+
+                                                <p class="text">7D/6N</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="people"></ion-icon>
+
+                                                <p class="text">pax: 10</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="location"></ion-icon>
+
+                                                <p class="text">Malaysia</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card-price">
+
+                                    <div class="wrapper">
+
+                                        <p class="reviews">(40 reviews)</p>
+
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="price">
+                                        $660
+                                        <span>/ per person</span>
+                                    </p>
+
+                                    <button class="btn btn-secondary">Book
+                                        Now</button>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="package-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/package/kohsmach.jpeg" alt="Santorini Island's Weekend Vacation"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">កោះស្មាច់</h3>
+
+                                    <p class="card-text">
+                                        កោះស្មាច់នៅខេត្តកោះកុងជាកន្លែងទេសចរណ៍មួយដ៏សម្បូរបែបសម្រាប់អ្នកទេសចរគ្រប់វ័យ
+                                    </p>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="time"></ion-icon>
+
+                                                <p class="text">7D/6N</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="people"></ion-icon>
+
+                                                <p class="text">pax: 10</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="location"></ion-icon>
+
+                                                <p class="text">Malaysia</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card-price">
+
+                                    <div class="wrapper">
+
+                                        <p class="reviews">(40 reviews)</p>
+
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="price">
+                                        $660
+                                        <span>/ per person</span>
+                                    </p>
+
+                                    <button class="btn btn-secondary">Book
+                                        Now</button>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="package-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/package/Bosra.jpg" alt="Summer Holiday To The Oxolotan River"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">ទឹកជ្រោះប៊ូស្រា</h3>
+
+                                    <p class="card-text">
+                                        ទឹកជ្រោះប៊ូស្រាមានទីតាំងស្ថិតនៅចម្ងាយប្រមាណ ៤៣គីឡូម៉ែត្រពីក្រុងសែនមនោរម្យនៃទីរួមខេត្តមណ្ឌលគិរី
+                                    </p>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="time"></ion-icon>
+
+                                                <p class="text">7D/6N</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="people"></ion-icon>
+
+                                                <p class="text">pax: 10</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="location"></ion-icon>
+
+                                                <p class="text">Malaysia</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card-price">
+
+                                    <div class="wrapper">
+
+                                        <p class="reviews">(20 reviews)</p>
+
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="price">
+                                        $520
+                                        <span>/ per person</span>
+                                    </p>
+
+                                    <button class="btn btn-secondary">Book
+                                        Now</button>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="package-card">
+
+                                <figure class="card-banner">
+                                    <img src="./assets/images/package/Boeng Yeak Laom.png" alt="Santorini Island's Weekend Vacation"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">បឹងយក្យឡោម</h3>
+
+                                    <p class="card-text">
+                                        ​បឹង​យក្ខ​ឡោម​មាន​ទីតាំង​ប្រមាណ​៥​គីឡូម៉ែត្រ​ភាគ​អាគ្នេយ៍​ពីទី​រួម​ខេត្ត​រតនគិរី​ 
+                                    </p>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="time"></ion-icon>
+
+                                                <p class="text">7D/6N</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="people"></ion-icon>
+
+                                                <p class="text">pax: 10</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="location"></ion-icon>
+
+                                                <p class="text">Malaysia</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="card-price">
+
+                                    <div class="wrapper">
+
+                                        <p class="reviews">(40 reviews)</p>
+
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="price">
+                                        $660
+                                        <span>/ per person</span>
+                                    </p>
+
+                                    <button class="btn btn-secondary">Book
+                                        Now</button>
+
+                                </div>
+
+                            </div>
+                        </li> 
+                        
+
                     </ul>
+
                     <button class="btn btn-primary">View All Packages</button>
+
                 </div>
             </section>
+
+            <!-- GALLERY -->
             <section class="gallery" id="gallery">
                 <div class="container">
-                    <p class="section-subtitle">Photo Gallery</p>
-                    <h2 class="h2 section-title">Photo's From Travellers</h2>
-                    <p class="section-text">
+                    <!-- <p class="section-subtitle">Photo Gallery</p> -->
+                    <h2 class="h2 section-title">ទេសភាព ទីក្រុងភ្នំពេញក្នុងពេលរាត្រី</h2>
+                    <!-- <p class="section-text">
                         Fusce hic augue velit wisi quibusdam pariatur, iusto
                         primis, nec nemo, rutrum. Vestibulum cumque
                         laudantium.
                         Sit ornare
                         mollitia tenetur, aptent.
-                    </p>
-                    <ul class="gallery-list" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    </p> -->
+                    <ul class="gallery-list">
+
                         <li class="gallery-item">
                             <figure class="gallery-image">
-                                <img src="./assets/images/package/knong psa.jpg" alt="Gallery image">
+                                <img src="./assets/images/package/p2.jpg    " alt="Gallery image">
                             </figure>
                         </li>
+
                         <li class="gallery-item">
                             <figure class="gallery-image">
-                                <img src="./assets/images/3.jpg" alt="Gallery image">
+                                <img src="./assets/images/package/p3.jpg" alt="Gallery image">
                             </figure>
                         </li>
+
                         <li class="gallery-item">
                             <figure class="gallery-image">
-                                <img src="./assets/images/4.jpg" alt="Gallery image">
+                                <img src="./assets/images/package/p1.jpg" alt="Gallery image">
                             </figure>
                         </li>
+
                         <li class="gallery-item">
                             <figure class="gallery-image">
-                                <img src="./assets/images/5.jpg" alt="Gallery image">
+                                <img src="./assets/images/package/p4.jpg" alt="Gallery image">
                             </figure>
                         </li>
+
                         <li class="gallery-item">
                             <figure class="gallery-image">
-                                <img src="./assets/images/6.jpg" alt="Gallery image">
+                                <img src="./assets/images/package/p5.jpg" alt="Gallery image">
                             </figure>
                         </li>
+                        
+
                     </ul>
+
                 </div>
             </section>
-            <section class="cta" id="contact">
+
+            <!-- CTA -->
+
+            <!-- <section class="cta" id="contact">
                 <div class="container">
+
                     <div class="cta-content">
                         <p class="section-subtitle">Call To Action</p>
+
                         <h2 class="h2 section-title">Ready For Unforgatable
                             Travel. Remember Us!</h2>
+
                         <p class="section-text">
                             Fusce hic augue velit wisi quibusdam pariatur,
                             iusto primis, nec nemo, rutrum. Vestibulum
                             cumque
-                            laudantium. Sit ornare
+                            laudantium. Sit ornarep
                             mollitia tenetur, aptent.
                         </p>
                     </div>
+
                     <button class="btn btn-secondary">Contact Us !</button>
+
                 </div>
-            </section>
+            </section> -->
+
         </article>
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="footer">
+
         <div class="footer-top">
             <div class="container">
+
                 <div class="footer-brand">
+
                     <a href="#" class="logo">
                         <h1>រំដួលទេចរណ៍</h1>
                     </a>
+
                     <p class="footer-text">
                         Urna ratione ante harum provident, eleifend,
                         vulputate molestiae proin fringilla, praesentium
@@ -529,48 +964,59 @@
                         at
                         perferendis, pretium, aenean aut ultrices.
                     </p>
+
                 </div>
+
                 <div class="footer-contact">
-                    <h4 class="contact-title">Quick Link</h4>
+
+                    <h4 class="contact-title">Contact Us</h4>
+
+                    <p class="contact-text">
+                        Feel free to contact and reach us !!
+                    </p>
+
                     <ul>
+
                         <li class="contact-item">
-                            <a href="#" class="contact-link">
-                                About Us
-                            </a>
+                            <ion-icon name="call-outline"></ion-icon>
+
+                            <a href="tel:+01123456790" class="contact-link">+01
+                                (123) 4567 90</a>
                         </li>
+
                         <li class="contact-item">
-                            <a href="#destination" class="contact-link">
-                                Destination
-                            </a>
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
                         </li>
+
                         <li class="contact-item">
-                            <a href="#package" class="contact-link">
-                                Packages
-                            </a>
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>3146 Koontz, California</address>
                         </li>
-                        <li class="contact-item">
-                            <a href="#gallery" class="contact-link">
-                                Gallery
-                            </a>
-                        </li>
-                        <li class="contact-item">
-                            <a href="#contact" class="contact-link">
-                                Contact Us
-                            </a>
-                        </li>
+
                     </ul>
+
                 </div>
+
                 <div class="footer-form">
+
                     <p class="form-text">
                         Subscribe our newsletter for more update & news !!
                     </p>
+
                     <form action class="form-wrapper">
                         <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
                         <button type="submit" class="btn btn-secondary">Subscribe</button>
                     </form>
+
                 </div>
+
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="container">
                 <p class="copyright">
@@ -594,29 +1040,15 @@
         </div>
     </footer>
 
-    <!-- Chev -->
-
-    <div class="chat-icon">
-        <img src="./assets/images/chat-icon-II.png" alt="">
-    </div>
-
-    <!-- Chev -->
-
-    <!--#GOTOTOP-->
+    <!--#GO TO TOP-->
     <a href="#top" class="go-top" data-go-top>
         <ion-icon name="chevron-up-outline"></ion-icon>
     </a>
-    <script src="jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="./assets/js/script.js"></script>
     <!-- ionicon link -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
 </body>
 
