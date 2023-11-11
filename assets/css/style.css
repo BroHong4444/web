@@ -408,7 +408,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/AngkorWat1.jpg");
+  /*(background-image: url('../images/AngkorWat1.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -419,7 +419,32 @@ body {
   min-height: 600px;
   text-align: center;
   padding-top: 125px;
+  transition: 3s;
 }
+
+/* Chev */ 
+
+.background1 {
+  background-image: url('../images/AngkorWat1.jpg');
+}
+
+.background2 {
+  background-image: url('../images/KorKer.jpg');
+}
+
+.background3 {
+  background-image: url('../images/TaPhrom.jpg');
+}
+
+.background4 {
+  background-image: url('../images/Bayorn.jpg');
+}
+
+.background5 {
+  background-image: url('../images/Kirirom.jpg');
+}
+
+/* Chev */ 
 
 .hero-title {
   margin-bottom: 20px;
@@ -927,6 +952,441 @@ address {
   opacity: 1;
 }
 
+/* Chev */
+
+/*login*/
+
+.fa-user{
+  color: rgba(245, 245, 245, 0.534);
+}
+
+
+
+.login-popup{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.521);
+  z-index: 50;
+}
+.login-popup .frm{
+  width: 450px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.login-popup .frm h2{
+  font-size: 24px;
+}
+.login-popup .frm .log-re{
+  width: 100%;
+  float: left;
+}
+.login-popup .frm .log-re ul{
+  list-style-type: none;
+}
+.login-popup .frm .log-re ul li{
+  float: left;
+}
+.login-popup .frm .log-re ul li a{
+  display: block;
+  width: 75%;
+  padding-right: 15px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-popup .frm .btnClose{
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+.login-popup .frm .btnClose:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.login-popup .frm .frm-login label, .login-popup .frm .frm-register label, .login-popup .frm .frm-forgot-pass label{
+  width: 100%;
+  margin-top: 15px;
+}
+.login-popup .frm .frm-login ::placeholder, .login-popup .frm .frm-register ::placeholder, .login-popup .frm .frm-forgot-pass ::placeholder{
+  font-weight: 300;
+}
+.login-popup .frm .frm-login .frm-control, .login-popup .frm .frm-register .frm-control, .login-popup .frm .frm-forgot-pass .frm-control{
+  width: 97%;
+  padding: 5px 5px;
+  margin-left: 5px;
+  border: 0.5px solid rgba(51, 51, 51, 0.527);
+  outline: none;
+  border-radius: 5px;
+}
+.login-popup .frm .frm-login input:hover, .login-popup .frm .frm-register input:hover, .login-popup .frm .frm-forgot-pass input:hover{
+  border: 1px solid #9c0b67f5;
+}
+.login-popup .frm .frm-login ul, .login-popup .frm .frm-forgot-pass ul{
+  list-style-type: none;
+  margin-top: 7px;
+}
+.login-popup .frm .frm-login ul li, .login-popup .frm .frm-forgot-pass ul li{
+  float: left;
+}
+.login-popup .frm .frm-forgot-pass ul li a{
+  color: #9c0b67f5;
+  margin-left: 5px;
+  text-decoration: none;
+}
+.login-popup .frm .frm-login ul li:nth-child(1) a:hover{
+  color: rgb(25, 128, 212);
+}
+.login-popup .frm .frm-login ul li:nth-child(2) a{
+  display: block;
+  padding-left: 93px;
+}
+.login-popup .frm .frm-login .inc-tele, .login-popup .frm .frm-login .inc-pass, .login-popup .frm .frm-login .inv-pass, .login-popup .frm .frm-login .inv-tele{
+  color: rgba(255, 0, 0, 0.705);
+  font-size: 14px;
+  margin-left: 8px;
+  font-weight: 200;
+}
+.login-popup .frm .frm-register #name, .login-popup .frm .frm-register #telephone, .login-popup .frm .frm-register #password{
+  color: rgba(255, 0, 0, 0.705);
+  font-size: 14px;
+  margin-left: 8px;
+  font-weight: 200;
+}
+.login-popup .frm .frm-login .btnLogin, .login-popup .frm .frm-register .btnRegister{
+  width: 100%;
+  background-color: rgb(45, 145, 228);
+  margin-top: 50px;
+  padding: 8px 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  transition: 0.4s;
+}
+.login-popup .frm .frm-register .btnRegister{
+  width: 30%;
+  margin-top: 20px;
+  float: right;
+  margin-right: 10px;
+}
+.login-popup .frm .frm-register .btnRegister:hover{
+  cursor: pointer;
+}
+.login-popup .frm .frm-login .btnLogin:hover{
+  box-shadow: 1px 2px 2px 1px rgba(51, 51, 51, 0.509);
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.login-popup .frm .frm-forgot-pass span{
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+.login-popup .frm .frm-forgot-pass ul li a{
+  color: black;
+  font-weight: 500;
+}
+.login-popup .frm .frm-forgot-pass .submit{
+  width: 98%;
+  margin-top: 20px;
+  margin-left: 1%;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(45, 145, 228);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.login-popup .frm .frm-forgot-pass .bottom-bar{
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 6px;
+}
+.login-popup .frm .frm-forgot-pass .bottom-bar ul{
+  margin: 0;
+  padding: 0;
+}
+.login-popup .frm .frm-forgot-pass .bottom-bar ul li{
+  float: left;
+}
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 80%;
+  left: 0;
+  top: 150px;
+  background-color: rgba(0, 0, 0, 0.432);
+  z-index: 3;
+}
+
+/* Login */
+/* Chat Box */
+
+.chat-icon{
+  position: fixed;
+  right: 5px;
+  bottom: 60px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.chat-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.chat-icon img:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.chat-box{
+  padding: 20px;
+  position: fixed;
+  right: 25px;
+  bottom: 105px;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  z-index: 20;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px 2px rgba(128, 128, 128, 0.208);
+}
+.chat-box .chat-header{
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.chat-box .chat-header .aeon-logo{
+  width: 50px;
+  height: 50px; 
+  margin-right: 180px;
+}
+.chat-box .chat-header .aeon-logo img{
+  width: 100%;
+  height: 100%;
+  float: left;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.chat-box .chat-header .right-menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.chat-box .chat-header .right-menu ul li{
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(243, 237, 237, 0.922);
+  margin-left: 8px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.chat-box .chat-header .right-menu ul li:hover{
+  background-color: rgba(173, 168, 168, 0.922);
+}
+.chat-box .des-box h1{
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  /* position: relative; */
+}
+.chat-box .start-chat-box{
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: 60px;
+  left: 15px;
+  background-color: rgb(65, 124, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding-bottom: 3.5px;
+  cursor: pointer;
+}
+.chat-box .start-chat-box h1{
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+.chat-box .footer{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+.chat-box .footer img{
+  width: 25px;
+  height: 27px;
+  margin-right: 5px;
+}
+/* .right-menu .fa-ellipsis:hover .tooltiptext {
+  visibility: visible;
+} */
+.right-menu .tooltiptext{
+  position: absolute;
+  top: 60%;  /* At the top of the tooltip */
+  left: 77%;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent rgba(210, 204, 204, 0.715);
+}
+.sub{
+  position: absolute;
+  width: 95%;
+  padding: 10px;
+  top: 85px;
+  left: 7px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 2px 2px 2px rgba(68, 68, 68, 0.358);
+  cursor: pointer;
+}
+
+.chat-box .chat-login{
+  position: fixed;
+  right: 25px;
+  bottom: 105px;
+  width: 350px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.215);
+  border-radius: 30px;
+  z-index: 100;
+}
+.chat-box .chat-login .fb-login{
+  position: absolute;
+  width: 100%;
+  height: 78%;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: white;
+}
+.chat-box .chat-login .fb-login .header{
+  width: 100%;
+  position: relative;
+}
+.chat-box .chat-login .fb-login .header h1{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 4px;
+  left: 40%;
+}
+.chat-box .chat-login .fb-login .header .switch{
+  width: 50px;
+  height: 31px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  background-color: rgba(128, 128, 128, 0.265);
+  float: right;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.chat-box .chat-login .fb-login .header .switch img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 7px;
+}
+.chat-box .chat-login .fb-login .continue-as{
+  width: 90%;
+  position: absolute;
+  top: 80px;
+  left: 17px;
+  padding: 10px 10px;
+  background-color: rgb(57, 121, 239);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.chat-box .chat-login .fb-login .continue-as h2, .chat-box .chat-login .fb-login .continue-guest h2{
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  margin-left: 5px;
+  margin-top: 6px;
+}
+.chat-box .chat-login .fb-login .continue-as i{
+  color: white;
+  font-size: 18px;
+  margin-top: 7px;
+}
+.chat-box .chat-login .fb-login .continue-guest{
+  width: 90%;
+  position: absolute;
+  top: 145px;
+  left: 17px;
+  padding: 10px 10px;
+  background-color: rgba(105, 103, 103, 0.269);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.chat-box .chat-login .fb-login .footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 30px;
+  align-items: center;
+} 
+.chat-box .chat-login .fb-login .footer p{
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+}
+.chat-box .chat-login .fb-login .footer span{
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Chat Box */
+
+/* Chev */
+
 /*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1010,6 +1470,14 @@ address {
     --fs-5: 14px;
     --padding: 6px 20px;
   }
+
+  /* Chev */
+
+  .btn-register {
+    gap: 1px;
+  }
+
+  /* Chev */
 
   /**
    * HERO
@@ -1137,6 +1605,16 @@ address {
   .social-list {
     gap: 10px;
   }
+
+  /* Chev */
+
+  .btn-register{
+    width: 80px;
+    display: none;
+  }
+
+
+  /* Chev */
 
   /**
    * POPULAR
@@ -1331,6 +1809,16 @@ address {
   .overlay {
     display: none;
   }
+  
+  /* Chev */
+
+  .btn-register{
+    margin-left: 20px;
+    width: 122px;
+    display: block;
+  }
+
+  /* Chev */
 
   /**
    * HERO
