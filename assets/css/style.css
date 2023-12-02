@@ -143,6 +143,9 @@ body {
 .btn-secondary:is(:hover, :focus) {
   background: hsla(0, 0%, 100%, 0.1);
 }
+a{
+  text-decoration: none;
+}
 
 .h1,
 .h2,
@@ -382,6 +385,10 @@ body {
   font-size: var(--fs-4);
   transition: var(--transition);
   text-transform: capitalize;
+}
+
+.navbar-link.no-hover:hover{
+  color: #fff !important;
 }
 
 .navbar-link:is(:hover, :focus) {
@@ -1802,6 +1809,10 @@ address {
     font-weight: unset;
     text-transform: uppercase;
     padding: 20px 15px;
+  }
+
+  .header.active .navbar-link {
+    color: var(--onyx);
   }
 
   .header.active .navbar-link {
