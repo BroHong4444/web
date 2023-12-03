@@ -155,6 +155,8 @@ a{
   text-transform: uppercase;
 }
 
+
+
 .h1 {
   color: var(--white);
   font-size: var(--fs-1);
@@ -170,8 +172,9 @@ a{
 }
 
 .h3 {
-  font-size: var(--fs-3);
-  font-weight: var(--fw-700);
+  font: 0px;
+  font-weight: 0px; 
+  font-family:'Moul', serif;
 }
 
 .section-subtitle {
@@ -196,6 +199,7 @@ a{
 .card-text {
   color: var(--black-coral);
   font-size: var(--fs-5);
+  font-family: 'Khmer OS Siemreap', Times, serif;
 }
 
 /*-----------------------------------*\
