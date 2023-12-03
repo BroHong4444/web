@@ -143,6 +143,9 @@ body {
 .btn-secondary:is(:hover, :focus) {
   background: hsla(0, 0%, 100%, 0.1);
 }
+a{
+  text-decoration: none;
+}
 
 .h1,
 .h2,
@@ -151,6 +154,8 @@ body {
   font-family: var(--ff-montserrat);
   text-transform: uppercase;
 }
+
+
 
 .h1 {
   color: var(--white);
@@ -167,8 +172,9 @@ body {
 }
 
 .h3 {
-  font-size: var(--fs-3);
-  font-weight: var(--fw-700);
+  font: 0px;
+  font-weight: 0px; 
+  font-family:'Moul', serif;
 }
 
 .section-subtitle {
@@ -193,6 +199,7 @@ body {
 .card-text {
   color: var(--black-coral);
   font-size: var(--fs-5);
+  font-family: 'Khmer OS Siemreap', Times, serif;
 }
 
 /*-----------------------------------*\
@@ -238,6 +245,10 @@ body {
 .helpline-box .icon-box {
   background: var(--bright-navy-blue);
   padding: 6px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
   border-radius: 50%;
   color: var(--white);
 }
@@ -253,6 +264,7 @@ body {
 .header-top .logo h1 {
   color: white;
   font-weight: normal;
+  font-size: 20px;
 }
 
 .header-top .logo img {
@@ -298,13 +310,23 @@ body {
   color: var(--white);
   padding: 8px;
   border: 1px solid hsla(0, 0%, 100%, 0.3);
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
   border-radius: 50%;
   font-size: 15px;
   transition: var(--transition);
 }
 
-.social-link:is(:hover, :focus) {
-  background: hsla(0, 0%, 100%, 0.2);
+.social-link.fb-bg-color:is(:hover, :focus) {
+  background: #3b5998;
+}
+.social-link.telegram-bg-color:is(:hover, :focus) {
+  background: #0088cc;
+}
+.social-link.youtube-bg-color:is(:hover, :focus) {
+  background: #d1211b;
 }
 
 .header .btn {
@@ -367,6 +389,10 @@ body {
   font-size: var(--fs-4);
   transition: var(--transition);
   text-transform: capitalize;
+}
+
+.navbar-link.no-hover:hover{
+  color: #fff !important;
 }
 
 .navbar-link:is(:hover, :focus) {
@@ -1391,6 +1417,26 @@ address {
  * responsive for larger than 580px screen
  */
 
+ @media (min-width: 280px) {
+  .container {
+    max-width: 480px;
+    margin-inline: auto;
+  }
+  .header-top .logo h1 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 360px) {
+  .container {
+    max-width: 480px;
+    margin-inline: auto;
+  }
+  .header-top .logo h1 {
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 580px) {
   /**
    * REUSED STYLE
@@ -1773,6 +1819,10 @@ address {
     color: var(--onyx);
   }
 
+  .header.active .navbar-link {
+    color: var(--onyx);
+  }
+
   .header.active .navbar-link:is(:hover, :focus) {
     color: var(--bright-navy-blue);
   }
@@ -1891,5 +1941,9 @@ address {
 
   .container {
     max-width: 1180px;
+  }
+
+  .header-top .logo h1 {
+    font-size: 20px;
   }
 }
