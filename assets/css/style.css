@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Moul&family=Poppins&family=Preahvihear&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Moul&family=Poppins&family=Preahvihear&display=swap');
 
 * {
   font-family: "Poppins", "Moul", serif;
@@ -189,6 +189,17 @@ a{
   margin-bottom: 15px;
   font-family: "Poppins", "Moul", serif;
   font-weight: normal;
+}
+
+.section-title .title-section{
+  color: black;
+  font-size: 18px;
+  font-family: "Poppins", "Moul", serif;
+}
+
+.section-title .map-section{
+  width: 100%;
+  height: 300px;
 }
 
 .section-text {
@@ -818,6 +829,7 @@ a{
 .footer-text {
   font-size: var(--fs-5);
   line-height: 1.7;
+  font-family: "Poppins", "Battambang", serif !important;
 }
 
 .footer-contact {
@@ -1884,8 +1896,9 @@ address {
     --fs-8: 13px;
   }
 
-  .meta-box > ion-icon {
+  .meta-box > i {
     font-size: 15px;
+    color: #0088cc;
   }
 
   /**
