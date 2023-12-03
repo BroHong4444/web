@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Moul&family=Poppins&family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Hanuman&family=Moul&family=Poppins&family=Preahvihear&display=swap');
 
 * {
   font-family: "Poppins", "Moul", serif;
@@ -290,6 +290,12 @@ a{
   color: var(--white);
 }
 
+.header-btn-group .btn-register{
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
 .search-btn,
 .nav-open-btn {
   font-size: 30px;
@@ -403,7 +409,7 @@ a{
 }
 
 .navbar-link.no-hover:hover{
-  color: #fff !important;
+  color: #7d3434 !important;
 }
 
 .navbar-link:is(:hover, :focus) {
@@ -478,6 +484,11 @@ a{
   color: var(--white);
   font-size: var(--fs-5);
   margin-bottom: 40px;
+}
+.hero-text.text-slider{
+  font-family: "Poppins", "Hanuman", serif !important;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .btn-group {

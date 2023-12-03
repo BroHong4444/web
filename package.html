@@ -15,8 +15,17 @@
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link src="">
+    <style>
+        .navbar-link:hover{
+            color: rgb(45, 45, 201);
+        }
+         
+        
+
+    </style>
 </head>
 <!-- id="top" oncontextmenu="return false" -->
 
@@ -26,21 +35,24 @@
         <div class="header-top">
             <div class="container">
                 <a href="tel:+01123456790" class="helpline-box">
-                    <div class="icon-box">
-                        <ion-icon name="call-outline"></ion-icon>
+                    <div class="icon-box" >
+                        <i class="fas fa-phone"></i>
                     </div>
                     <div class="wrapper">
                         <p class="helpline-title">Contact Us :</p>
-
                         <p class="helpline-number">0974775242</p>
                     </div>
                 </a>
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <h1>រំដួលទេចរណ៍</h1>
                 </a>
                 <div class="header-btn-group">
                     <button class="search-btn" aria-label="Search">
                         <ion-icon name="search"></ion-icon>
+                    </button>
+                    <button class="btn btn-primary btn-register" id="btn-register">
+                        <i class="fa-solid fa-user"></i>
+                        REGISTER
                     </button>
                     <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
                         <ion-icon name="menu-outline"></ion-icon>
@@ -100,7 +112,6 @@
                 </nav>
                 <button class="btn btn-primary">Book Now</button>
             </div>
-        </div>
         </div>
     </header>
 
@@ -592,78 +603,58 @@
     </main>
 
     <!-- FOOTER -->
-
     <footer class="footer">
-
         <div class="footer-top">
             <div class="container">
-
                 <div class="footer-brand">
-
-                    <a href="#" class="logo">
+                    <a href="index.html" class="logo">
                         <h1>រំដួលទេចរណ៍</h1>
                     </a>
-
                     <p class="footer-text">
-                        Urna ratione ante harum provident, eleifend,
-                        vulputate molestiae proin fringilla, praesentium
-                        magna conubia
-                        at
-                        perferendis, pretium, aenean aut ultrices.
+                        រំដួលទេចរណ៍ ជាក្រុមហ៊ុនជូនអ្នកដំណើរទស្សនារមណីយដ្ឋាននានាទូទាំងប្រទេសកម្ពុជា និងសេវាកម្មសមរម្យសម្រាប់លោកអ្នក
                     </p>
-
                 </div>
-
                 <div class="footer-contact">
-
-                    <h4 class="contact-title">Contact Us</h4>
-
-                    <p class="contact-text">
-                        Feel free to contact and reach us !!
-                    </p>
-
+                    <h4 class="contact-title">Quick Link</h4>
                     <ul>
-
                         <li class="contact-item">
-                            <ion-icon name="call-outline"></ion-icon>
-
-                            <a href="tel:+01123456790" class="contact-link">+01
-                                (123) 4567 90</a>
+                            <a href="about-us.html" class="contact-link">
+                                About Us
+                            </a>
                         </li>
-
                         <li class="contact-item">
-                            <ion-icon name="mail-outline"></ion-icon>
-
-                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+                            <a href="#destination" class="contact-link">
+                                Destination
+                            </a>
                         </li>
-
                         <li class="contact-item">
-                            <ion-icon name="location-outline"></ion-icon>
-
-                            <address>3146 Koontz, California</address>
+                            <a href="package.html" class="contact-link">
+                                Packages
+                            </a>
                         </li>
-
+                        <li class="contact-item">
+                            <a href="gallery.html" class="contact-link">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="./contact us/index.html" class="contact-link">
+                                Contact Us
+                            </a>
+                        </li>
                     </ul>
-
                 </div>
-
                 <div class="footer-form">
-
                     <p class="form-text">
                         Subscribe our newsletter for more update & news !!
                     </p>
-
                     <form action class="form-wrapper">
                         <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
-
                         <button type="submit" class="btn btn-secondary">Subscribe</button>
                     </form>
-
                 </div>
-
             </div>
         </div>
-
         <div class="footer-bottom">
             <div class="container">
                 <p class="copyright">
@@ -691,6 +682,8 @@
     <a href="#top" class="go-top" data-go-top>
         <ion-icon name="chevron-up-outline"></ion-icon>
     </a>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="./assets/js/script.js"></script>
     <!-- ionicon link -->
