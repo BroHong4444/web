@@ -191,6 +191,17 @@ a{
   font-weight: normal;
 }
 
+.section-title .title-section{
+  color: black;
+  font-size: 18px;
+  font-family: "Poppins", "Moul", serif;
+}
+
+.section-title .map-section{
+  width: 100%;
+  height: 300px;
+}
+
 .section-text {
   color: var(--black-coral);
   margin-bottom: 30px;
