@@ -127,7 +127,7 @@ $(document).ready(function(){
           </div>
       </div>
   `
-  $('body').on('click', ".btn-register, #booking", function(){
+  $('body').on('click', ".btn-register, #booking, #booking-body", function(){
       $('body').append(loginpopup)
       $('body').find('.login-popup').append(frm)
       $('body').find('.frm .frm-register').hide()
