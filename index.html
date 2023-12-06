@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
@@ -36,9 +36,7 @@
                     <button class="search-btn" aria-label="Search">
                         <ion-icon name="search"></ion-icon>
                     </button>
-                    <!-- <button class="btn btn-primary btn-register" id="btn-register"> -->
-                        <i class="fa-solid fa-user btn-register" id="btn-register"></i>
-                    <!-- </button> -->
+                    <i class="fa-solid fa-user btn-register" id="btn-register"></i>
                     <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
                         <ion-icon name="menu-outline"></ion-icon>
                     </button>
@@ -87,7 +85,7 @@
                             <a href="package.html" class="navbar-link" data-nav-link>packages</a>
                         </li>
                         <li>
-                            <a href="./gallery/index.html" class="navbar-link" data-nav-link>gallery</a>
+                            <a href="gallery.html" class="navbar-link" data-nav-link>gallery</a>
                         </li>
                         <li>
                             <a href="./contact us/index.html" class="navbar-link" data-nav-link>contact us</a>
@@ -102,11 +100,12 @@
         <article>
             <!-- HERO -->
             <section class="hero" id="heroElement">
-                <div class="container">
+                <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 
                     <h2 class="h1 hero-title">ដំណើរកម្សាន្តជុំវិញប្រទេសកម្ពុជា</h2>
                     <p class="hero-text text-slider">
-                        ធ្វើដំណើរជាមួយនឹងរំដួលទេសចរណ៍ លោកអ្នកទទួលបាននូវសុវត្ថិភាព និងសេវាកម្មសមរម្យ បន្ថែមលើសពីនេះនិងទទួលបាននូវបទពិសោធន៍ជាមួយនឹងដំណើរកម្សាន្តដ៏សប្បាយរីករាយ
+                        ធ្វើដំណើរជាមួយនឹងរំដួលទេសចរណ៍ លោកអ្នកទទួលបាននូវសុវត្ថិភាព និងសេវាកម្មសមរម្យ
+                        បន្ថែមលើសពីនេះនិងទទួលបាននូវបទពិសោធន៍ជាមួយនឹងដំណើរកម្សាន្តដ៏សប្បាយរីករាយ
                     </p>
                     <div class="btn-group">
                         <button class="btn btn-primary">Learn more</button>
@@ -114,50 +113,17 @@
                     </div>
                 </div>
             </section>
-            <!-- TOUR SEARCH -->
-            <section class="tour-search">
-                <div class="container">
-                    <form action class="tour-search-form">
-                        <div class="input-wrapper">
-                            <label for="destination" class="input-label">Search
-                                Destination*</label>
-                            <input type="text" name="destination" id="destination" required
-                                placeholder="Enter Destination" class="input-field">
-                        </div>
-                        <div class="input-wrapper">
-                            <label for="people" class="input-label">Pax
-                                Number*</label>
-                            <input type="number" name="people" id="people" required placeholder="No.of People"
-                                class="input-field">
-                        </div>
-                        <div class="input-wrapper">
-                            <label for="checkin" class="input-label">Checkin
-                                Date**</label>
-                            <input type="date" name="checkin" id="checkin" required class="input-field">
-                        </div>
-
-                        <div class="input-wrapper">
-                            <label for="checkout" class="input-label">Checkout
-                                Date*</label>
-                            <input type="date" name="checkout" id="checkout" required class="input-field">
-                        </div>
-                        <button type="submit" class="btn btn-secondary">Inquire
-                            now</button>
-                    </form>
-                </div>
-            </section>
 
             <!-- POPULAR -->
 
             <section class="popular" id="destination">
                 <div class="container">
-                    <p class="section-subtitle">Uncover place</p>
-                    <h2 class="h2 section-title">តំបន់ទេសរចរណ៍ដែលពេញនិយម</h2>
+                    <h2 class="h2 section-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">តំបន់ទេសរចរណ៍ដែលពេញនិយម</h2>
                     <p class="section-text">
                         លោកអ្នកអាចស្វែងរកមើលតំបន់រមណីយដ្ឋានល្បីៗនៅក្នុងប្រទេសកម្ពុជា
                     </p>
                     <ul class="popular-list" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
-                        <li>
+                        <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="popular-card">
                                 <figure class="card-img">
                                     <img src="./assets/images/KPs (2).jpg" alt="San miguel, italy" loading="lazy">
@@ -181,7 +147,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="popular-card">
                                 <figure class="card-img">
                                     <img src="./assets/images/1.jpg" alt="Burj khalifa, dubai" loading="lazy">
@@ -205,7 +171,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="popular-card">
                                 <figure class="card-img">
                                     <img src="./assets/images/6.jpg" alt="Kyoto temple, japan" loading="lazy">
@@ -237,13 +203,12 @@
             </section>
             <section class="package" id="package">
                 <div class="container">
-                    <p class="section-subtitle">Popular Packeges</p>
-                    <h2 class="h2 section-title">Checkout Our Packeges</h2>
-                    <p class="section-text">
+                    <h2 class="h2 section-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">កញ្ចប់សម្រាប់ដំណើរកម្សាន្ត</h2>
+                    <p class="section-text title-small">
                         ជាមួយនឹងកញ្ចប់សេវាកម្មពិសេស លោកអ្នកអាចស្វែងរកសេវាកម្មដូចខាងក្រោម៖
                     </p>
                     <ul class="package-list">
-                        <li>
+                        <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="package-card">
 
                                 <figure class="card-banner">
@@ -318,7 +283,7 @@
 
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="package-card">
 
                                 <figure class="card-banner">
@@ -392,7 +357,7 @@
 
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="package-card">
 
                                 <figure class="card-banner">
@@ -467,7 +432,7 @@
 
                             </div>
                         </li>
-                        <li>
+                        <li data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="package-card">
 
                                 <figure class="card-banner">
@@ -549,14 +514,9 @@
             </section>
             <section class="gallery" id="gallery">
                 <div class="container">
-                    <p class="section-subtitle">Photo Gallery</p>
-                    <h2 class="h2 section-title">Photo's From Travellers</h2>
-                    <p class="section-text">
-                        Fusce hic augue velit wisi quibusdam pariatur, iusto
-                        primis, nec nemo, rutrum. Vestibulum cumque
-                        laudantium.
-                        Sit ornare
-                        mollitia tenetur, aptent.
+                    <h2 class="h2 section-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">រូបភាពទូទៅ</h2>
+                    <p class="section-text title-small">
+                        រូបភាពទូទៅនៃរមណីយដ្ឋានពេញនិយម
                     </p>
                     <ul class="gallery-list" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                         <li class="gallery-item">
@@ -597,7 +557,8 @@
                         <h1>រំដួលទេចរណ៍</h1>
                     </a>
                     <p class="footer-text">
-                        រំដួលទេចរណ៍ ជាក្រុមហ៊ុនជូនអ្នកដំណើរទស្សនារមណីយដ្ឋាននានាទូទាំងប្រទេសកម្ពុជា និងសេវាកម្មសមរម្យសម្រាប់លោកអ្នក
+                        រំដួលទេចរណ៍ ជាក្រុមហ៊ុនជូនអ្នកដំណើរទស្សនារមណីយដ្ឋាននានាទូទាំងប្រទេសកម្ពុជា
+                        និងសេវាកម្មសមរម្យសម្រាប់លោកអ្នក
                     </p>
                 </div>
                 <div class="footer-contact">
@@ -682,7 +643,6 @@
     <!-- ionicon link -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
