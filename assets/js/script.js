@@ -191,8 +191,8 @@ $(document).ready(function(){
   $('body').on('click', '.login-popup .btnLogin', function(){
       var telephone = $('body').find('.frm-login #txt-telephone')
       var password = $('body').find('.frm-login #txt-password')
-      var tele = "016 559 498"
-      var pass = "09012003"
+      var tele = "admin"
+      var pass = "1234"
       var inc_pass = $('body').find('.frm-login .inc-pass')
       var inc_tele = $('body').find('.frm-login .inc-tele')
       var inv_pass = $('body').find('.frm-login .inv-pass')
@@ -388,8 +388,9 @@ function showBackgroundImage(imageNumber) {
 }
 
 // To show the second background image (for example)
-let imageIndex = 2;
+
 heroElement.classList.add('background1');
+let imageIndex = 2;
 setInterval(function(){
     showBackgroundImage(imageIndex);
     imageIndex++;
