@@ -184,6 +184,10 @@ a{
   font-family: var(--ff-montserrat);
   margin-bottom: 8px;
 }
+.section-subtitle.extra-small{
+  font-family: "Poppins", "Battambang", serif !important;
+  font-weight: bold;
+}
 
 .section-title {
   margin-bottom: 15px;
@@ -205,6 +209,10 @@ a{
 .section-text {
   color: var(--black-coral);
   margin-bottom: 30px;
+}
+.section-text.title-small{
+  font-family: "Poppins", "Hanuman", serif !important;
+  font-size: 18px !important;
 }
 
 .card-text {
