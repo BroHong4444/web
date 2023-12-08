@@ -369,7 +369,7 @@ a{
   visibility: hidden;
   pointer-events: none;
   transition: 0.15s ease-in;
-  z-index: 3;
+  z-index: 999 !important;
 }
 
 .navbar.active {
