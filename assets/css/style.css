@@ -718,6 +718,10 @@ a{
   font-size: 13px;
 }
 
+.card-meta-item .meta-box .text.font-battambang{
+  font-family: "Poppins", "Siemreap", serif !important;
+}
+
 .package-card .card-price {
   background: var(--united-nations-blue);
   color: var(--white);
